@@ -1,9 +1,11 @@
 import { createStore } from "vuex";
 import setting, { SettingState } from "./Modules/setting";
+import ecommerce, { EcommerceState } from "./Modules/ecommerce";
 import createPersistedState from "vuex-persistedstate";
 
 export interface RootState {
   setting: SettingState;
+  ecommerce: EcommerceState;
 }
 
 export default createStore({
@@ -14,11 +16,13 @@ export default createStore({
   },
   modules: {
     setting,
+    ecommerce,
   },
   plugins: [
     createPersistedState({
-      key: "vuex_setting",
-      paths: ["setting"],
+      key: "vuex_store",
+      paths: ["setting", "ecommerce"],
+      storage: localStorage,
     }),
   ],
 });

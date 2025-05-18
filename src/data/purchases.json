@@ -1,0 +1,9 @@
+[
+  { "customerId": 1, "productId": 101, "date": "2025-03-01" },
+  { "customerId": 1, "productId": 102, "date": "2025-02-02" },
+  { "customerId": 2, "productId": 103, "date": "2025-02-05" },
+  { "customerId": 2, "productId": 104, "date": "2025-02-06" },
+  { "customerId": 3, "productId": 105, "date": "2025-02-07" },
+  { "customerId": 3, "productId": 106, "date": "2025-02-08" },
+  { "customerId": 1, "productId": 104, "date": "2025-02-10" }
+]

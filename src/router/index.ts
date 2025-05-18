@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import SettingView from "../views/SettingView.vue";
+import ProductsView from "../views/ProductsView.vue";
+import BasketView from "../views/BasketView.vue";
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -11,6 +14,16 @@ const routes: Array<RouteRecordRaw> = [
     path: "/setting",
     name: "setting",
     component: SettingView,
+  },
+  {
+    path: "/ecommerce/products",
+    name: "products",
+    component: ProductsView,
+  },
+  {
+    path: "/ecommerce/basket",
+    name: "basket",
+    component: BasketView,
   },
 ];
 

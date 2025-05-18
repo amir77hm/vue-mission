@@ -34,6 +34,46 @@
               >
                 Settings
               </router-link>
+              <!-- Van Section -->
+              <div class="relative group">
+                <button
+                  class="inline-flex items-center px-1 pt-1 text-sm font-medium h-full text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white"
+                >
+                  Ecommerce
+                  <svg
+                    class="ml-1 h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown Menu -->
+                <div
+                  class="absolute top-14 left-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 hidden group-hover:block"
+                >
+                  <div class="py-1">
+                    <router-link
+                      to="/ecommerce/products"
+                      class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      Products
+                    </router-link>
+                    <router-link
+                      to="/ecommerce/basket"
+                      class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                      Basket
+                    </router-link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
