@@ -1,11 +1,6 @@
 import type { Module } from "vuex";
 import type { Theme, FontSize } from "@/types/setting";
-import type { RootState } from "@/store";
-
-export type SettingState = {
-  theme: Theme;
-  fontSize: FontSize;
-};
+import { RootState, SettingState } from "@/types/store";
 
 const settingModule: Module<SettingState, RootState> = {
   namespaced: true,

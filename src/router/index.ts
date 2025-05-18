@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import SettingView from "../views/SettingView.vue";
 import ProductsView from "../views/ProductsView.vue";
 import BasketView from "../views/BasketView.vue";
+import MarketView from "../views/MarketView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -24,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/ecommerce/basket",
     name: "basket",
     component: BasketView,
+  },
+  {
+    path: "/market",
+    name: "market",
+    component: MarketView,
   },
 ];
 

@@ -1,13 +1,9 @@
 import { Module } from "vuex";
 import { BasketItem, Customer, Product, Purchase } from "@/types/ecommerce";
-import { RootState } from "../index";
 import customers from "@/data/customers.json";
 import purchases from "@/data/purchases.json";
 import products from "@/data/products.json";
-
-export interface EcommerceState {
-  basket: BasketItem[];
-}
+import { RootState, EcommerceState } from "@/types/store";
 
 const basketModule: Module<EcommerceState, RootState> = {
   namespaced: true,

@@ -1,12 +1,8 @@
 import { createStore } from "vuex";
-import setting, { SettingState } from "./Modules/setting";
-import ecommerce, { EcommerceState } from "./Modules/ecommerce";
+import setting from "./Modules/setting";
+import ecommerce from "./Modules/ecommerce";
+import market from "./Modules/market";
 import createPersistedState from "vuex-persistedstate";
-
-export interface RootState {
-  setting: SettingState;
-  ecommerce: EcommerceState;
-}
 
 export default createStore({
   actions: {
@@ -17,6 +13,7 @@ export default createStore({
   modules: {
     setting,
     ecommerce,
+    market,
   },
   plugins: [
     createPersistedState({
