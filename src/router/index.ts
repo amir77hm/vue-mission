@@ -5,6 +5,8 @@ import ProductsView from "../views/ProductsView.vue";
 import BasketView from "../views/BasketView.vue";
 import MarketView from "../views/MarketView.vue";
 import AdminView from "../views/AdminView.vue";
+import UserView from "../views/UserView.vue";
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -35,6 +37,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/admin",
     name: "admin",
     component: AdminView,
+  },
+  {
+    path: "/user",
+    name: "user",
+    component: UserView,
   },
 ];
 

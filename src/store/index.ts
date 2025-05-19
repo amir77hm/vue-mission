@@ -2,6 +2,7 @@ import { createStore } from "vuex";
 import setting from "./Modules/setting";
 import ecommerce from "./Modules/ecommerce";
 import market from "./Modules/market";
+import user from "./Modules/user";
 import createPersistedState from "vuex-persistedstate";
 
 export default createStore({
@@ -14,6 +15,7 @@ export default createStore({
     setting,
     ecommerce,
     market,
+    user,
   },
   plugins: [
     createPersistedState({
